@@ -1,0 +1,6 @@
+torch
+torchvision
+Pillow
+matplotlib
+learn2learn
+piq
