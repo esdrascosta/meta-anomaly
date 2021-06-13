@@ -90,7 +90,7 @@ def main(lr=0.005, maml_lr=0.01, iterations=500, shots=5, tps=5, fas=3, device=t
     train_set = MVTecAD(
         obj='cable',
         transform=T.Compose([
-            T.Resize(128),
+            T.Resize(256),
             T.ToTensor(),
             # T.Normalize(mean=[0.3262804, 0.4143766, 0.46666864], std=[0.1490097, 0.21071856, 0.23415886])
         ])
@@ -100,7 +100,7 @@ def main(lr=0.005, maml_lr=0.01, iterations=500, shots=5, tps=5, fas=3, device=t
         obj='cable',
         mode='test',
         transform=T.Compose([
-            T.Resize(128),
+            T.Resize(256),
             T.ToTensor(),
             # T.Normalize(mean=[0.3262804, 0.4143766, 0.46666864], std=[0.1490097, 0.21071856, 0.23415886])
         ])
