@@ -16,7 +16,7 @@ class MVTecAD(Dataset):
     TAR_FILE = 'data/mvtech_ad/mvtec_anomaly_detection.tar.xz'
     DATASET_DIR = 'data/mvtech_ad'
 
-    def __init__(self, transform=None, target_transform=None, download=True, mode='train', obj=None):
+    def __init__(self, transform=None, target_transform=None, download=False, mode='train', obj=None):
         self.data = []
         self.transform = transform
         self.target_transform = target_transform
